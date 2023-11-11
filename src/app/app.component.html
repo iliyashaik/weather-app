@@ -1,0 +1,70 @@
+<div class="d-flex justify-content-center">
+  <div class="login">
+
+    <h2 gSkipHydration="true" class="title">
+      <h3 ngSkipHydration="true" class="welcome">Welcome to  Weather App</h3>
+
+      <h5 gSkipHydration="true" class="hint">Enter your ZipCode or Sate Name to check the Temparature</h5>
+    </h2>
+
+    <div class="login-group">
+      <input required type="text" placeholder="Search a Zipcode" [(ngModel)]="zipcode"/>
+    </div>
+    <br>
+    <div>
+      <button type="submit" class="btn btn-primary" (click)="getData()">
+        Search
+      </button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="d-flex align-items-center"> <h2>Temaparature : </h2>
+      <div>
+        <h2> {{temparature}}%C </h2>
+      </div></div>
+
+
+      <div class="d-flex align-items-center"> <h2>Country : </h2>
+        <div>
+          <h2> {{country}}</h2>
+        </div></div>
+
+
+        <div class="d-flex align-items-center"> <h2>CityName : </h2>
+          <div>
+            <h2> {{cityName}} </h2>
+          </div>
+        </div>
+
+
+          <div class="d-flex align-items-center"> <h2>Max Temp : </h2>
+            <div>
+              <h2> {{maxtemparature}} </h2>
+            </div>
+          </div>
+
+
+            <div class="d-flex align-items-center"> <h2>Min Temp : </h2>
+              <div>
+                <h2> {{mintemparature}} </h2>
+              </div>
+            </div>
+
+
+              <div class="d-flex align-items-center"> <h2>Humidity : </h2>
+                <div>
+                  <h2> {{humidity}} </h2>
+                </div>
+              </div>
+                <div class="d-flex align-items-center"> <h2>Feels Like : </h2>
+                  <div>
+                    <h2> {{feelslike}} </h2>
+                  </div>
+              </div>
+
+
+  </div>
+
+<router-outlet></router-outlet>
