@@ -6,7 +6,7 @@ import {api} from './services/api.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'weather-desktop';
+  title = 'Weather-Desktop-App';
 
   constructor(private apiService: api) { }
 
