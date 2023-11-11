@@ -8,7 +8,7 @@ import {api} from './services/api.service'
 export class AppComponent {
   title = 'weather-desktop';
 
-  constructor(private service: api) { }
+  constructor(private apiService: api) { }
 
   zipcode: string = '';
   temparature: Number = 0;
@@ -20,7 +20,7 @@ export class AppComponent {
   feelslike: string = '';
 
   getData(){
-    this.service.fetchData(this.zipcode).subscribe((response: any) => {
+    this.apiService.fetchData(this.zipcode).subscribe((response: any) => {
       console.log(response, 'response')
       this.temparature = response.main.temp;
       this.country = response.sys.country;
