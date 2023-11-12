@@ -21,7 +21,7 @@ export class AppComponent {
 
   getData(){
     this.apiService.fetchData(this.zipcode).subscribe((response: any) => {
-      console.log(response, 'response')
+      this.zipcode = '';
       this.temparature = response.main.temp;
       this.country = response.sys.country;
       this.cityName = response.name;
