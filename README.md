@@ -26,3 +26,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Firebase Process
+
+`firebase` login Used for firebase
+`firebase init` Initialize firebase
+Then build production
+`firebase deploy -m "commit message" --only hosting` Used for deploying firebase only for hosting
+`firebase open`
+
+
